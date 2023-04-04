@@ -1,5 +1,6 @@
 import { Location } from './Location';
 
 export interface Marker {
-  location : Location;
+  location: Location;
+  info: string;
 }
