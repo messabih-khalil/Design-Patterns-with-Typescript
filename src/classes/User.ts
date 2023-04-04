@@ -1,9 +1,5 @@
 import * as faker from 'faker';
-
-interface Location {
-  lat: number;
-  lng: number;
-}
+import { Location } from '../intefaces/Location';
 
 export class User {
   name: string;
