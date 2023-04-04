@@ -1,10 +1,10 @@
 import * as faker from 'faker';
-import { Location } from '../intefaces/Location';
+import { Location, LocationCoordinate } from '../intefaces/Location';
 
-export class Company {
+export class Company implements Location {
   name: string;
   catchPhrase: string;
-  location: Location;
+  location: LocationCoordinate;
   info: string;
 
   constructor() {
