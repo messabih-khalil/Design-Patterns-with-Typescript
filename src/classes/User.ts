@@ -1,16 +1,19 @@
-import casual from 'casual';
+import * as faker from 'faker';
 
 interface Location {
-  lat: string;
-  lng: string;
+  lat: number;
+  lng: number;
 }
 
-class User {
+export class User {
   name: string;
   location: Location;
 
   constructor() {
-    this.name = casual.name;
-    this.location = { lat: casual.latitude, lng: casual.longitude };
+    this.name = faker.name.firstName();
+    this.location = {
+      lat: parseFloat(faker.address.latitude()),
+      lng: parseFloat(faker.address.longitude()),
+    };
   }
 }
