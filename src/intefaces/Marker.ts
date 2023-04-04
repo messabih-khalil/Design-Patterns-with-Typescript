@@ -1,6 +1,6 @@
-import { Location } from './Location';
+import { LocationCoordinate } from './Location';
 
 export interface Marker {
-  location: Location;
+  location: LocationCoordinate;
   info: string;
 }
