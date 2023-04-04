@@ -1,9 +1,9 @@
 import * as faker from 'faker';
-import { Location } from '../intefaces/Location';
+import { LocationCoordinate } from '../intefaces/Location';
 
 export class User {
   name: string;
-  location: Location;
+  location: LocationCoordinate;
   info: string;
   constructor() {
     this.name = faker.name.firstName();
